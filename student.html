@@ -1,0 +1,185 @@
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+
+        <form data-toggle="validator" role="form">
+            <h1 style="text-align:center; color:springgreen; text-shadow: 2px 2px rgb(15, 118, 228)">Student Registration Form</h1>
+            <hr>
+
+
+            <div class="row justify-content-md-center">
+
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12 ">
+                    <label class="FIRST NAME">FIRST NAME:</label>
+                </div>
+
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="text" class="form-control" id="text" data-toggle="tooltip" maxlength="20" placeholder="Your First name" name="First_Name"
+                        required/>(max characters a-z and A-Z)
+                </div>
+            </div>
+
+
+            <div class="row justify-content-md-center">
+
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="LAST NAME">LAST NAME:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="text" class="form-control" id="text" data-toggle="tooltip" placeholder="Your Last name" maxlength="20" name="LAST_Name"
+                        required>(max characters a-z and A-Z)
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="DATE OF BIRTH">DATE OF BIRTH:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="Date" class="form-control" id="date" data-toggle="tooltip" placeholder="DATE OF BIRTH" name="DATE OF BIRTH"
+                        required>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="EMAIL ID">EMAIL ID:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="email" class="form-control" id="email" data-toggle="tooltip" placeholder="Your current Email" name="EMAIL ID"
+                        data-error="that's email address is invalid" required>
+
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="MOBILE NUMBER:">MOBILE NO:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="tel" class="form-control" pattern="^\d{10}$" id="Mobile_Number" data-toggle="tooltip" maxlength="10" placeholder="+91-"
+                        name="MOBILE NUMBER" required>(10 digit number)
+                </div>
+            </div>
+
+
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+                    <label class="radio-inline">GENDER:</label>
+
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+
+
+                    <input type="radio" name="Gender" value="Male">Male &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                    <input type="radio" name="Gender" value="Female">Female
+
+                </div>
+
+            </div>
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="ADDRESS">ADDRESS:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <textarea name="Address" class="form-control" id="Address" rows="4" cols="30" data-toggle="tooltip" placeholder="Enter Your Address"
+                        required></textarea>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="CITY">CITY:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="text" class="form-control" id="Mobile_Number" name="City" maxlength="30" data-toggle="tooltip" placeholder="Your city"
+                        required>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="PIN CODE">PIN CODE:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="number" class="form-control" id="pin_code" maxlength="6" data-toggle="tooltip" placeholder="Your Pincode" required>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="STATE">STATE:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="text" class="form-control" id="state" maxlength="30" data-toggle="tooltip" placeholder=" Your state" required>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+
+                <div class="col-1g-2 col-md-2 col-sm-12 col-xs-12">
+
+                    <label for="COUNTRY:">COUNTRY:</label>
+                </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="text" class="form-control" id="country" value="India" readonly="readonly" data-toggle="tooltip" placeholder="Your Country"
+                        required>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12">
+                <center>
+                    <input type="submit" class="btn btn-info" value="Submit"> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" class="btn btn-info" value="Reset">
+                </center>
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

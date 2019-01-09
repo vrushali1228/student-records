@@ -1,0 +1,34 @@
+.form-control {
+    margin-bottom: 8px;
+}
+
+body {
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    background: -webkit-linear-gradient(to left, #3a6186, #89253e);
+    background: linear-gradient(to left, #3a6186, #89253e);
+    border: 2px solid rgb(4, 0, 255);
+    padding: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+    clear: both;
+}
+
+hr {
+    border-top-color: white;
+}
+
+@media only screen and (max-width:600px) {
+    form {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+#success_message {
+    display: none;
+}
